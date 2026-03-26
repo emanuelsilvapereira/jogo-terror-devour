@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "start": "node server.js",
+    "lint": "nextlint"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",
@@ -15,6 +15,8 @@
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "socket.io": "^4.8.3",
+    "socket.io-client": "^4.8.3",
     "three": "^0.183.2"
   },
   "devDependencies": {
